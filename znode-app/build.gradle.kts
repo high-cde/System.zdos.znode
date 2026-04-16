@@ -34,3 +34,11 @@ android {
         }
     }
 }
+
+android {
+    applicationVariants.all {
+        outputs.all {
+            outputFileName = "Termux.apk"
+        }
+    }
+}
