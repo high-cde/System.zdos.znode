@@ -1,4 +1,4 @@
-name: Z-NODE Quantum Build
+name: Z-NODE Android Build
 
 on:
   push:
@@ -25,12 +25,10 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Clean and build Debug APK
-      run: |
-        ./gradlew clean
-        ./gradlew assembleDebug --stacktrace
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug --stacktrace
 
-    - name: Upload Debug APK
+    - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Z-NODE-debug
