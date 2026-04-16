@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="systems.zdos.znode">
+    package="systems.zdos.terminal">
 
     <application
         android:label="Termux"

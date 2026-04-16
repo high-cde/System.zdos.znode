@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "systems.zdos.znode"
+    namespace = "systems.zdos.terminal"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "systems.zdos.znode"
+        applicationId = "systems.zdos.terminal"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

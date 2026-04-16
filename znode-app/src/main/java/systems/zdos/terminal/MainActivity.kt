@@ -1,4 +1,4 @@
-package systems.zdos.znode
+package systems.zdos.terminal
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
