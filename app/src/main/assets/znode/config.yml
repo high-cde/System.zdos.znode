@@ -1,0 +1,8 @@
+version: 1.0
+identity:
+  node_name: Z-NODE α
+  theme: quantum
+modules:
+  - cortex
+  - panel
+  - dsn
