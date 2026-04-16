@@ -2,7 +2,7 @@
     package="systems.zdos.znode">
 
     <application
-        android:label="Z-NODE"
+        android:label="Termux"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
