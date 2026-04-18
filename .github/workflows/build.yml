@@ -1,9 +1,8 @@
-name: Z-NODE Android Build
+name: Z-NODE DevShell Build
 
 on:
   push:
     branches: [ "master" ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -16,8 +15,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        distribution: 'temurin'
-        java-version: '21'
+        distribution: temurin
+        java-version: 21
 
     - name: Set up Android SDK
       uses: android-actions/setup-android@v3
@@ -25,11 +24,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Build Debug APK
-      run: ./gradlew  :znode-app:assembleDebug --stacktrace
+    - name: Build DevShell APK
+      run: ./gradlew :znode-app:assembleDebug --stacktrace
 
-    - name: Upload APK
+    - name: Upload DevShell APK
       uses: actions/upload-artifact@v4
       with:
-        name: Z-NODE-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
+        name: DevShell-APK
+        path: znode-app/build/outputs/**/*.apk
